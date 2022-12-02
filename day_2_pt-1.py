@@ -24,68 +24,47 @@ for i in data_into_list:
  
     if first == "A":
         first_value = 1
-
     elif first == "B":
         first_value = 2
-
     elif first == "C":
         first_value = 3
 
-    elif first == "X":
-        first_value = 1
-
-    elif first == "Y":
-        first_value = 2
-
-    elif first == "Z":
-        first_value = 3
-
-    if second == "A":
+    if second == "X":
         second_value = 1
-
-    elif second == "B":
-        second_value = 2
-
-    elif second == "C":
-        second_value = 3
-
-    elif second == "X":
-        second_value = 1
-
     elif second == "Y":
         second_value = 2
-
     elif second == "Z":
         second_value = 3
 
-  
-    if first_value < second_value:
-        win_lose_tie = 6
-        print("------")
-        print(second_value)
-        print(win_lose_tie)
-        print("------")
-        print("won")
 
+    if (first_value == 1 and second_value == 2) or (first_value == 2 and second_value == 3) or (first_value == 3 and second_value == 1):
+        win_lose_tie = 6
+        # print("won")
+        # print("------")
+        # print(first_value)
+        # print(second_value)
+        # print(win_lose_tie)
+        # print("------")
     elif first_value == second_value:
         win_lose_tie = 3
-        print("------")
-        print(second_value)
-        print(win_lose_tie)
-        print("------")
-        print("draw")
-
-    elif first_value > second_value:
+        # print("draw")
+        # print("------")
+        # print(first_value)
+        # print(second_value)
+        # print(win_lose_tie)
+        # print("------")
+    else:
         win_lose_tie = 0
+        print("lose")
         print("------")
+        print(first_value)
         print(second_value)
         print(win_lose_tie)
         print("------")
-        print("lose")
     
-    added = (added + second_value + win_lose_tie)
+    added += second_value + win_lose_tie
 
-    print(added)
+print(added)
 
 
     
