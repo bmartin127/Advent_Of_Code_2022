@@ -1,5 +1,3 @@
-
-
 # opening the file in read mode
 readin = open("readin.txt", "r")
   
@@ -10,5 +8,3 @@ readin_list = readin.read()
 # when newline ('\n') is seen.
 data_into_list = readin_list.split("\n")
 # print(data_into_list)
-
-

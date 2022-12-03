@@ -56,20 +56,20 @@ for i in data_into_list:
 
     if (first_value == 1 and second_value == 2) or (first_value == 2 and second_value == 3) or (first_value == 3 and second_value == 1):
         win_lose_tie = 6
-        # print("won")
-        # print("------")
-        # print(first_value)
-        # print(second_value)
-        # print(win_lose_tie)
-        # print("------")
+        print("won")
+        print("------")
+        print(first_value)
+        print(second_value)
+        print(win_lose_tie)
+        print("------")
     elif first_value == second_value:
         win_lose_tie = 3
-        # print("draw")
-        # print("------")
-        # print(first_value)
-        # print(second_value)
-        # print(win_lose_tie)
-        # print("------")
+        print("draw")
+        print("------")
+        print(first_value)
+        print(second_value)
+        print(win_lose_tie)
+        print("------")
     else:
         win_lose_tie = 0
         print("lose")
